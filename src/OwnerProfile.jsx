@@ -3,8 +3,8 @@ import ownerData from "./ownerData";
 import dogData from "./dogData";
 
 export default function OwnerProfile() {
-    const { ownerName } = useParams();
-    const owner = ownerData.find(owner => owner.name === ownerName);
+    const { ownerId } = useParams();
+    const owner = ownerData.find(owner => owner.id === parseInt(ownerId));
 
     if (!owner) {
         return <p>Owner not found</p>;

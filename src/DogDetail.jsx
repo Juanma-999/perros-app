@@ -22,7 +22,7 @@ export default function DogDetail() {
         <p>Duration: {dog.duration}</p>
         <p>Owner: {owner.name}</p>
         <p>
-            <Link to={`/profile/${owner.name}`}>View {owner.name}'s Profile</Link>
+            <Link to={`/profile/${owner.id}`}>View {owner.name}'s Profile</Link>
         </p>
         <p>
             <Link to={"/"}>Home</Link>
